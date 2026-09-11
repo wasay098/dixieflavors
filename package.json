@@ -1,0 +1,15 @@
+{
+  "name": "dixieflavors",
+  "version": "1.0.0",
+  "description": "The American Recipe Atlas",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": ["recipes", "american", "food"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.14"
+  }
+}
