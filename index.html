@@ -1,117 +1,1288 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The American Recipe Atlas — a collection of regional comfort food, coastal classics, and modern home-cooked favorites." />
-    <title>Table &amp; Folk | The American Recipe Atlas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name="google-adsense-account" content="ca-pub-2026346300470553">
-    <meta name="google-site-verification" content="5wLiQIDG7R1606SONQXK9MbkAlUUf1qc73w122fwm08" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="announcement"><span>New in the kitchen</span> 24 regional recipes, mapped for the hungry &nbsp;·&nbsp; <a href="#recipes">Explore the atlas <span aria-hidden="true">→</span></a></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="Table and Folk home">
-        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span>table <em>&amp;</em> folk</span>
+  <title>American Regional Recipes: 24 Classic Dishes by Region | Table & Folk</title>
+
+  <meta
+    name="description"
+    content="Explore 24 American regional recipes from the South, Northeast, Midwest, Southwest, West Coast, and Mountain West, with cooking times, ingredients, tips, and regional context."
+  />
+
+  <meta
+    name="keywords"
+    content="American regional recipes, American food, Southern recipes, Texas recipes, New England food, Midwest recipes, Southwestern recipes, Pacific Northwest recipes, regional American cuisine"
+  />
+
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Table & Folk" />
+  <meta name="theme-color" content="#1d2822" />
+
+  <link rel="canonical" href="https://dixieflavors.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dixieflavors.vercel.app/" />
+  <meta
+    property="og:title"
+    content="American Regional Recipes: 24 Classic Dishes by Region"
+  />
+  <meta
+    property="og:description"
+    content="Discover regional American food through 24 approachable recipes, from Gulf Coast gumbo and Texas brisket to New England seafood and Pacific Northwest salmon."
+  />
+  <meta
+    property="og:image"
+    content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=85"
+  />
+  <meta property="og:site_name" content="Table & Folk" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="American Regional Recipes: 24 Classic Dishes by Region"
+  />
+  <meta
+    name="twitter:description"
+    content="Explore American regional food with approachable recipes, regional context, cooking times, and practical kitchen tips."
+  />
+  <meta
+    name="twitter:image"
+    content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=85"
+  />
+
+  <!-- Existing verification -->
+  <meta
+    name="google-adsense-account"
+    content="ca-pub-2026346300470553"
+  />
+
+  <meta
+    name="google-site-verification"
+    content="5wLiQIDG7R1606SONQXK9MbkAlUUf1qc73w122fwm08"
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- WebSite structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Table & Folk",
+    "url": "https://dixieflavors.vercel.app/",
+    "description": "An editorial guide to American regional recipes and food traditions.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://dixieflavors.vercel.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- FAQ structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is American regional cuisine?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "American regional cuisine describes foods and cooking traditions associated with particular parts of the United States. Geography, local ingredients, immigration, agriculture, industry, and community traditions all influence regional food."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are examples of regional American foods?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Examples include Gulf Coast gumbo, Texas barbecue, shrimp and grits, New England lobster rolls, Maryland crab cakes, Chicago deep-dish pizza, New Mexican green chile dishes, California burritos, and Pacific Northwest salmon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What foods are associated with the American South?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Southern food includes a wide range of traditions. Common examples include shrimp and grits, Nashville hot chicken, barbecue, biscuits, greens, cornbread, and dishes influenced by Cajun, Creole, Lowcountry, and African American cooking traditions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What foods are associated with New England?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "New England is strongly associated with seafood and coastal cooking, including lobster rolls, clam chowder, oysters, baked fish, and other dishes shaped by the region's Atlantic coastline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Southwestern American food different?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Southwestern food reflects the region's Indigenous, Mexican, Spanish, and later American influences. Chiles, corn, beans, tortillas, beef, and distinctive local ingredients such as New Mexico green chile play important roles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these official American geographic regions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Table & Folk uses six editorial regions to make the recipe collection easier to explore. American food traditions overlap, and real culinary boundaries do not always follow a single geographic map."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    <span>Updated September 17, 2026</span>
+    24 regional recipes, mapped for the hungry
+    &nbsp;·&nbsp;
+    <a href="#recipes">
+      Explore the atlas
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+
+    <a
+      class="brand"
+      href="#top"
+      aria-label="Table and Folk home"
+    >
+      <span class="brand-mark" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <span>
+        table <em>&amp;</em> folk
+      </span>
+    </a>
+
+    <nav
+      class="main-nav"
+      aria-label="Main navigation"
+    >
+      <a class="is-active" href="#top">Home</a>
+      <a href="#guide">Regional Guide</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#regions">Regions</a>
+      <a href="#story">Our story</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button
+        class="saved-button"
+        type="button"
+        data-open-saved
+        aria-label="Open saved recipes"
+      >
+        <span
+          class="heart-icon"
+          aria-hidden="true"
+        >♡</span>
+
+        <span>Saved</span>
+
+        <span
+          class="saved-count"
+          data-saved-count
+        >0</span>
+      </button>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section
+      class="hero section-wrap"
+      aria-labelledby="hero-title"
+    >
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          The American recipe atlas
+        </p>
+
+        <h1 id="hero-title">
+          Good food <i>lives</i> in the details.
+        </h1>
+
+        <p class="hero-lede">
+          Explore American regional recipes that taste like where
+          they came from — from Gulf Coast gumbo and Texas barbecue
+          to New England seafood and Pacific Northwest salmon.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="button button--dark"
+            href="#recipes"
+          >
+            Browse recipes
+            <span aria-hidden="true">↘</span>
+          </a>
+
+          <a
+            class="text-link"
+            href="#guide"
+          >
+            Explore the guide
+            <span aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+        <div class="hero-note">
+
+          <span
+            class="avatar-stack"
+            aria-hidden="true"
+          >
+            <span>J</span>
+            <span>M</span>
+            <span>K</span>
+          </span>
+
+          <span>
+            Made for slow Sundays<br />
+            <strong>and hungry Tuesdays.</strong>
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+
+        <div class="hero-image-wrap">
+
+          <div
+            class="hero-image"
+            role="img"
+            aria-label="A skillet of golden comfort food on a linen table"
+          ></div>
+
+          <div class="hero-sticker">
+            <span>eat</span>
+            <strong>well</strong>
+            <span>often</span>
+          </div>
+
+        </div>
+
+        <div class="hero-caption">
+          <span>01 / 06</span>
+          <span>Comfort food, coast to coast</span>
+        </div>
+
+        <div class="floating-recipe">
+
+          <span class="floating-label">
+            Dish of the day
+          </span>
+
+          <strong>
+            Green chile<br />
+            enchiladas
+          </strong>
+
+          <a
+            href="#recipes"
+            data-quick-open="green-chile-enchiladas"
+          >
+            View recipe
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section
+      class="search-band section-wrap"
+      aria-label="Find a recipe"
+    >
+
+      <div class="search-heading">
+
+        <p class="eyebrow">
+          Start with a craving
+        </p>
+
+        <h2>
+          What are you hungry for?
+        </h2>
+
+      </div>
+
+      <form
+        class="search-form"
+        role="search"
+        data-search-form
+      >
+
+        <label class="search-input-wrap">
+
+          <span
+            class="search-icon"
+            aria-hidden="true"
+          >⌕</span>
+
+          <input
+            type="search"
+            placeholder="Try “brisket”, “coastal”, or “weeknight”"
+            aria-label="Search recipes"
+            data-search-input
+          />
+
+          <button
+            type="button"
+            class="clear-search"
+            aria-label="Clear search"
+            data-clear-search
+          >
+            ×
+          </button>
+
+        </label>
+
+        <button
+          class="button button--terra"
+          type="submit"
+        >
+          Find a recipe
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- FEATURED -->
+    <section
+      class="featured section-wrap"
+      id="featured"
+      aria-labelledby="featured-title"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            Worth making tonight
+          </p>
+
+          <h2 id="featured-title">
+            The good stuff
+          </h2>
+
+        </div>
+
+        <a
+          class="text-link"
+          href="#recipes"
+        >
+          See all recipes
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+      <div
+        class="featured-grid"
+        data-featured-grid
+      ></div>
+
+    </section>
+
+
+    <!-- REGIONAL GUIDE -->
+    <section
+      class="regional-guide section-wrap"
+      id="guide"
+      aria-labelledby="guide-title"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            A useful place to start
+          </p>
+
+          <h2 id="guide-title">
+            American regional recipes,
+            explained
+          </h2>
+
+        </div>
+
+        <p class="section-intro">
+          American food isn't one single cuisine. Climate,
+          agriculture, immigration, Indigenous foodways,
+          migration, industry, and local traditions have all
+          shaped what people cook across the country.
+        </p>
+
+      </div>
+
+      <div class="guide-content">
+
+        <article class="guide-card">
+
+          <span class="guide-number">01</span>
+
+          <h3>
+            Start with the ingredients
+          </h3>
+
+          <p>
+            Corn, beans, rice, wheat, seafood, beef, pork,
+            chiles, tomatoes and dairy appear across the country,
+            but regions use them in very different ways.
+          </p>
+
+        </article>
+
+
+        <article class="guide-card">
+
+          <span class="guide-number">02</span>
+
+          <h3>
+            Look at local traditions
+          </h3>
+
+          <p>
+            Barbecue, seafood cookery, Italian-American food,
+            Cajun and Creole dishes, Tex-Mex cooking and
+            Southwestern chile traditions all developed through
+            distinct histories and communities.
+          </p>
+
+        </article>
+
+
+        <article class="guide-card">
+
+          <span class="guide-number">03</span>
+
+          <h3>
+            Expect overlap
+          </h3>
+
+          <p>
+            Culinary borders are rarely exact. A dish may travel
+            across state lines, change in a new community, or
+            combine influences from several places.
+          </p>
+
+        </article>
+
+      </div>
+
+      <div class="editorial-note">
+
+        <strong>Our approach:</strong>
+
+        The six regions on Table &amp; Folk are an editorial
+        framework for exploring recipes, not an official map
+        of American cuisine. Recipes are approachable home-cook
+        interpretations rather than claims of one definitive
+        version of a traditional dish.
+
+      </div>
+
+    </section>
+
+
+    <!-- REGIONS -->
+    <section
+      class="regions section-wrap"
+      id="regions"
+      aria-labelledby="regions-title"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            Take the scenic route
+          </p>
+
+          <h2 id="regions-title">
+            Cook your way across America
+          </h2>
+
+        </div>
+
+        <p class="section-intro">
+          Six editorial regions. Twenty-four dishes.
+          A whole lot of reasons to pull up a chair.
+        </p>
+
+      </div>
+
+      <div
+        class="region-grid"
+        data-region-grid
+      ></div>
+
+    </section>
+
+
+    <!-- COOK BY TIME -->
+    <section
+      class="cook-by-time section-wrap"
+      aria-labelledby="time-title"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            Match the recipe to your schedule
+          </p>
+
+          <h2 id="time-title">
+            What should I cook tonight?
+          </h2>
+
+        </div>
+
+        <p class="section-intro">
+          From quick weeknight meals to slow barbecue projects,
+          start with the time you actually have.
+        </p>
+
+      </div>
+
+      <div class="time-grid">
+
+        <a
+          class="time-card"
+          href="#recipes"
+          data-time-filter="quick"
+        >
+          <span>Under 30 min</span>
+          <strong>Quick bites</strong>
+          <p>
+            Seafood, sandwiches and other faster recipes
+            for busy nights.
+          </p>
+          <span class="time-arrow">→</span>
+        </a>
+
+
+        <a
+          class="time-card"
+          href="#recipes"
+          data-time-filter="medium"
+        >
+          <span>30–60 min</span>
+          <strong>Weeknight comfort</strong>
+          <p>
+            Familiar dishes with enough time for the flavors
+            to come together.
+          </p>
+          <span class="time-arrow">→</span>
+        </a>
+
+
+        <a
+          class="time-card"
+          href="#recipes"
+          data-time-filter="slow"
+        >
+          <span>60+ min</span>
+          <strong>Slow cooking</strong>
+          <p>
+            Brisket, barbecue and other recipes worth
+            making a little project.
+          </p>
+          <span class="time-arrow">→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- PANTRY -->
+    <section
+      class="pantry section-wrap"
+      aria-labelledby="pantry-title"
+    >
+
+      <div class="pantry-copy">
+
+        <p class="eyebrow">
+          Build a useful kitchen
+        </p>
+
+        <h2 id="pantry-title">
+          American pantry essentials
+        </h2>
+
+        <p>
+          You don't need a huge specialty pantry to explore
+          regional American cooking. A handful of flexible
+          ingredients can take you surprisingly far.
+        </p>
+
+      </div>
+
+      <div class="pantry-list">
+
+        <div>
+          <strong>Corn &amp; grains</strong>
+          <span>Cornmeal · grits · rice · tortillas</span>
+        </div>
+
+        <div>
+          <strong>Beans &amp; vegetables</strong>
+          <span>Beans · onions · peppers · tomatoes</span>
+        </div>
+
+        <div>
+          <strong>Proteins</strong>
+          <span>Beef · chicken · pork · seafood</span>
+        </div>
+
+        <div>
+          <strong>Flavor builders</strong>
+          <span>Chiles · herbs · spices · barbecue sauce</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- RECIPES -->
+    <section
+      class="recipes section-wrap"
+      id="recipes"
+      aria-labelledby="recipes-title"
+    >
+
+      <div class="section-heading recipe-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            The recipe index
+          </p>
+
+          <h2 id="recipes-title">
+            Find your next favorite
+          </h2>
+
+        </div>
+
+        <span
+          class="result-count"
+          data-result-count
+        >
+          24 recipes
+        </span>
+
+      </div>
+
+
+      <div class="recipe-toolbar">
+
+        <div
+          class="filter-scroll"
+          role="tablist"
+          aria-label="Filter recipes by region"
+          data-filter-list
+        ></div>
+
+        <label class="sort-select">
+
+          <span>Sort</span>
+
+          <select data-sort>
+
+            <option value="featured">
+              Featured
+            </option>
+
+            <option value="az">
+              A–Z
+            </option>
+
+            <option value="quick">
+              Quickest first
+            </option>
+
+          </select>
+
+        </label>
+
+      </div>
+
+
+      <div
+        class="recipe-grid"
+        data-recipe-grid
+      ></div>
+
+
+      <div
+        class="empty-state"
+        data-empty-state
+        hidden
+      >
+
+        <div
+          class="empty-plate"
+          aria-hidden="true"
+        >⌁</div>
+
+        <h3>
+          No recipes found
+        </h3>
+
+        <p>
+          Try a different craving, state, or region.
+        </p>
+
+        <button
+          type="button"
+          class="button button--outline"
+          data-reset-search
+        >
+          Clear filters
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- COOKING TIPS -->
+    <section
+      class="cooking-tips section-wrap"
+      aria-labelledby="tips-title"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            Before you start cooking
+          </p>
+
+          <h2 id="tips-title">
+            Regional cooking tips
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div class="tips-grid">
+
+        <article>
+
+          <span>01</span>
+
+          <h3>
+            Taste as you go
+          </h3>
+
+          <p>
+            Regional dishes often rely on balance between
+            salt, acid, heat, smoke and richness. Taste before
+            adding more seasoning.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span>02</span>
+
+          <h3>
+            Respect the cooking method
+          </h3>
+
+          <p>
+            Slow smoking, gentle seafood cooking, frying and
+            long simmering produce very different textures.
+            Give the method enough time to work.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span>03</span>
+
+          <h3>
+            Make substitutions carefully
+          </h3>
+
+          <p>
+            Substitutions are useful for home cooks, but changing
+            a key ingredient can also change the character of a
+            dish. Substitute with the recipe's texture and
+            moisture in mind.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- STORY -->
+    <section
+      class="story section-wrap"
+      id="story"
+      aria-labelledby="story-title"
+    >
+
+      <div
+        class="story-image"
+        role="img"
+        aria-label="Hands setting a family-style table"
+      ></div>
+
+      <div class="story-copy">
+
+        <p class="eyebrow">
+          Pull up a chair
+        </p>
+
+        <h2 id="story-title">
+          Recipes with a sense of place.
+        </h2>
+
+        <p>
+          Table &amp; Folk is a love letter to the meals that
+          tell us where we are — and who we are with. We keep
+          ingredient lists approachable, instructions clear,
+          and the spirit of each dish at the center.
+        </p>
+
+        <a
+          class="text-link"
+          href="#guide"
+        >
+          Explore our food guide
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section
+      class="faq section-wrap"
+      id="faq"
+      aria-labelledby="faq-title"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            Common questions
+          </p>
+
+          <h2 id="faq-title">
+            American regional food FAQ
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>
+            What is American regional cuisine?
+          </summary>
+
+          <p>
+            American regional cuisine describes foods and cooking
+            traditions associated with particular parts of the
+            United States. Geography, local ingredients,
+            immigration, agriculture, migration and community
+            traditions all influence regional food.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            What are examples of regional American foods?
+          </summary>
+
+          <p>
+            Examples include Gulf Coast gumbo, Texas barbecue,
+            shrimp and grits, New England lobster rolls,
+            Maryland crab cakes, Chicago deep-dish pizza,
+            New Mexican green chile dishes, California burritos
+            and Pacific Northwest salmon.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            What foods are associated with the American South?
+          </summary>
+
+          <p>
+            Southern food includes many traditions, including
+            barbecue, shrimp and grits, hot chicken, biscuits,
+            cornbread and dishes influenced by Cajun, Creole,
+            Lowcountry and African American cooking.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            What foods are associated with New England?
+          </summary>
+
+          <p>
+            New England is strongly associated with seafood and
+            coastal cooking, including lobster rolls, clam
+            chowder, oysters, baked fish and other dishes shaped
+            by the Atlantic coastline.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            What makes Southwestern food different?
+          </summary>
+
+          <p>
+            Southwestern food reflects Indigenous, Mexican,
+            Spanish and later American influences. Chiles,
+            corn, beans, tortillas and beef are common, with
+            regional ingredients such as New Mexico green chile
+            playing an important role.
+          </p>
+
+        </details>
+
+
+        <details>
+          <summary>
+            Are your six regions official geographic regions?
+          </summary>
+
+          <p>
+            No. The six regions used by Table &amp; Folk are an
+            editorial framework for exploring the recipes. Real
+            American culinary traditions overlap, and food
+            boundaries do not always follow state lines.
+          </p>
+
+        </details>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section
+      class="newsletter section-wrap"
+      aria-labelledby="newsletter-title"
+    >
+
+      <div>
+
+        <p class="eyebrow">
+          A little something in your inbox
+        </p>
+
+        <h2 id="newsletter-title">
+          Make room for good food.
+        </h2>
+
+      </div>
+
+      <form
+        class="newsletter-form"
+        data-newsletter-form
+      >
+
+        <label for="email">
+          Weekly recipes, regional stories, zero spam.
+        </label>
+
+        <div class="newsletter-input">
+
+          <input
+            id="email"
+            type="email"
+            placeholder="Your email address"
+            autocomplete="email"
+            required
+          />
+
+          <button
+            class="button button--dark"
+            type="submit"
+          >
+            Sign me up
+            <span aria-hidden="true">→</span>
+          </button>
+
+        </div>
+
+        <p
+          class="form-message"
+          data-form-message
+          role="status"
+        ></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-top">
+
+      <a
+        class="brand brand--light"
+        href="#top"
+      >
+
+        <span
+          class="brand-mark"
+          aria-hidden="true"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+
+        <span>
+          table <em>&amp;</em> folk
+        </span>
+
       </a>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="is-active" href="#top">Home</a>
-        <a href="#recipes">Recipes</a>
-        <a href="#regions">Regions</a>
-        <a href="#story">Our story</a>
-      </nav>
+      <p>
+        Recipes that remember where they came from.
+      </p>
 
-      <div class="header-actions">
-        <button class="saved-button" type="button" data-open-saved aria-label="Open saved recipes">
-          <span class="heart-icon" aria-hidden="true">♡</span>
-          <span>Saved</span>
-          <span class="saved-count" data-saved-count>0</span>
-        </button>
-        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      <div class="social-links">
+
+        <a
+          href="#top"
+          aria-label="Instagram"
+        >ig</a>
+
+        <a
+          href="#top"
+          aria-label="Pinterest"
+        >p</a>
+
+        <a
+          href="#top"
+          aria-label="TikTok"
+        >tk</a>
+
       </div>
-    </header>
 
-    <main>
-      <section class="hero section-wrap" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> The American recipe atlas</p>
-          <h1 id="hero-title">Good food <i>lives</i> in the details.</h1>
-          <p class="hero-lede">A handpicked collection of recipes that taste like where they came from — from Gulf Coast gumbo to Pacific Northwest salmon.</p>
-          <div class="hero-actions">
-            <a class="button button--dark" href="#recipes">Browse recipes <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="#regions">Explore the map <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="hero-note"><span class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>K</span></span><span>Made for slow Sundays<br /><strong>and hungry Tuesdays.</strong></span></div>
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Table &amp; Folk
+      </span>
+
+      <span>
+        Made for the everyday home cook
+      </span>
+
+      <a href="#top">
+        Back to top ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- RECIPE MODAL -->
+  <div
+    class="modal-backdrop"
+    data-modal-backdrop
+    hidden
+  ></div>
+
+
+  <aside
+    class="recipe-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+    data-recipe-modal
+    hidden
+  >
+
+    <button
+      class="modal-close"
+      type="button"
+      aria-label="Close recipe"
+      data-close-modal
+    >
+      ×
+    </button>
+
+    <div
+      class="modal-image"
+      data-modal-image
+    ></div>
+
+    <div class="modal-content">
+
+      <div class="modal-meta">
+
+        <span data-modal-region></span>
+
+        <span data-modal-time></span>
+
+      </div>
+
+      <h2
+        id="modal-title"
+        data-modal-title
+      ></h2>
+
+      <p
+        class="modal-description"
+        data-modal-description
+      ></p>
+
+      <div class="modal-columns">
+
+        <div>
+
+          <h3>
+            Gather
+          </h3>
+
+          <ul data-modal-ingredients></ul>
+
         </div>
-        <div class="hero-visual">
-          <div class="hero-image-wrap">
-            <div class="hero-image" role="img" aria-label="A skillet of golden comfort food on a linen table"></div>
-            <div class="hero-sticker"><span>eat</span><strong>well</strong><span>often</span></div>
-          </div>
-          <div class="hero-caption"><span>01 / 06</span><span>Comfort food, coast to coast</span></div>
-          <div class="floating-recipe"><span class="floating-label">Dish of the day</span><strong>Green chile<br />enchiladas</strong><a href="#recipes" data-quick-open="green-chile-enchiladas">View recipe <span aria-hidden="true">↗</span></a></div>
+
+        <div>
+
+          <h3>
+            Make it
+          </h3>
+
+          <ol data-modal-steps></ol>
+
         </div>
-      </section>
 
-      <section class="search-band section-wrap" aria-label="Find a recipe">
-        <div class="search-heading"><p class="eyebrow">Start with a craving</p><h2>What are you hungry for?</h2></div>
-        <form class="search-form" role="search" data-search-form>
-          <label class="search-input-wrap">
-            <span class="search-icon" aria-hidden="true">⌕</span>
-            <input type="search" placeholder="Try “brisket”, “coastal”, or “weeknight”" aria-label="Search recipes" data-search-input />
-            <button type="button" class="clear-search" aria-label="Clear search" data-clear-search>×</button>
-          </label>
-          <button class="button button--terra" type="submit">Find a recipe</button>
-        </form>
-      </section>
+      </div>
 
-      <section class="featured section-wrap" id="featured" aria-labelledby="featured-title">
-        <div class="section-heading"><div><p class="eyebrow">Worth making tonight</p><h2 id="featured-title">The good stuff</h2></div><a class="text-link" href="#recipes">See all recipes <span aria-hidden="true">→</span></a></div>
-        <div class="featured-grid" data-featured-grid></div>
-      </section>
+      <button
+        class="button button--terra modal-save"
+        type="button"
+        data-modal-save
+      >
+        <span
+          class="heart-icon"
+          aria-hidden="true"
+        >♡</span>
 
-      <section class="regions section-wrap" id="regions" aria-labelledby="regions-title">
-        <div class="section-heading"><div><p class="eyebrow">Take the scenic route</p><h2 id="regions-title">Cook your way across America</h2></div><p class="section-intro">Six regions. Twenty-four dishes. A whole lot of reasons to pull up a chair.</p></div>
-        <div class="region-grid" data-region-grid></div>
-      </section>
+        Save recipe
 
-      <section class="recipes section-wrap" id="recipes" aria-labelledby="recipes-title">
-        <div class="section-heading recipe-heading"><div><p class="eyebrow">The recipe index</p><h2 id="recipes-title">Find your next favorite</h2></div><span class="result-count" data-result-count>24 recipes</span></div>
-        <div class="recipe-toolbar">
-          <div class="filter-scroll" role="tablist" aria-label="Filter recipes by region" data-filter-list></div>
-          <label class="sort-select"><span>Sort</span><select data-sort><option value="featured">Featured</option><option value="az">A–Z</option><option value="quick">Quickest first</option></select></label>
-        </div>
-        <div class="recipe-grid" data-recipe-grid></div>
-        <div class="empty-state" data-empty-state hidden><div class="empty-plate" aria-hidden="true">⌁</div><h3>No recipes found</h3><p>Try a different craving, state, or region.</p><button type="button" class="button button--outline" data-reset-search>Clear filters</button></div>
-      </section>
+      </button>
 
-      <section class="story section-wrap" id="story" aria-labelledby="story-title">
-        <div class="story-image" role="img" aria-label="Hands setting a family-style table"></div>
-        <div class="story-copy"><p class="eyebrow">Pull up a chair</p><h2 id="story-title">Recipes with a sense of place.</h2><p>Table &amp; Folk is a love letter to the meals that tell us where we are — and who we are with. We keep the ingredient lists approachable, the instructions clear, and the spirit of each dish intact.</p><a class="text-link" href="#top">Read our story <span aria-hidden="true">→</span></a></div>
-      </section>
+    </div>
 
-      <section class="newsletter section-wrap" aria-labelledby="newsletter-title">
-        <div><p class="eyebrow">A little something in your inbox</p><h2 id="newsletter-title">Make room for good food.</h2></div>
-        <form class="newsletter-form" data-newsletter-form><label for="email">Weekly recipes, regional stories, zero spam.</label><div class="newsletter-input"><input id="email" type="email" placeholder="Your email address" required /><button class="button button--dark" type="submit">Sign me up <span aria-hidden="true">→</span></button></div><p class="form-message" data-form-message role="status"></p></form>
-      </section>
-    </main>
+  </aside>
 
-    <footer class="site-footer"><div class="footer-top"><a class="brand brand--light" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>table <em>&amp;</em> folk</span></a><p>Recipes that remember where they came from.</p><div class="social-links"><a href="#top" aria-label="Instagram">ig</a><a href="#top" aria-label="Pinterest">p</a><a href="#top" aria-label="TikTok">tk</a></div></div><div class="footer-bottom"><span>© 2026 Table &amp; Folk</span><span>Made for the everyday home cook</span><a href="#top">Back to top ↑</a></div></footer>
 
-    <div class="modal-backdrop" data-modal-backdrop hidden></div>
-    <aside class="recipe-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" data-recipe-modal hidden>
-      <button class="modal-close" type="button" aria-label="Close recipe" data-close-modal>×</button>
-      <div class="modal-image" data-modal-image></div>
-      <div class="modal-content"><div class="modal-meta"><span data-modal-region></span><span data-modal-time></span></div><h2 id="modal-title" data-modal-title></h2><p class="modal-description" data-modal-description></p><div class="modal-columns"><div><h3>Gather</h3><ul data-modal-ingredients></ul></div><div><h3>Make it</h3><ol data-modal-steps></ol></div></div><button class="button button--terra modal-save" type="button" data-modal-save><span class="heart-icon" aria-hidden="true">♡</span> Save recipe</button></div>
-    </aside>
+  <script src="script.js"></script>
 
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
